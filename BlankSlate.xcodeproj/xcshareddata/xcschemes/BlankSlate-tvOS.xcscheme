@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D965445B1DA2A4B900FB42DB"
-               BuildableName = "BlankSlate.framework"
-               BlueprintName = "BlankSlate"
+               BlueprintIdentifier = "C6ADC8E71E76E91D00FD24FB"
+               BuildableName = "BlankSlate-tvOS.framework"
+               BlueprintName = "BlankSlate-tvOS"
                ReferencedContainer = "container:BlankSlate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D96544641DA2A4B900FB42DB"
-               BuildableName = "BlankSlateTests.xctest"
-               BlueprintName = "BlankSlateTests"
+               BlueprintIdentifier = "C6ADC8EF1E76E91E00FD24FB"
+               BuildableName = "BlankSlate-tvOSTests.xctest"
+               BlueprintName = "BlankSlate-tvOSTests"
                ReferencedContainer = "container:BlankSlate.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D965445B1DA2A4B900FB42DB"
-            BuildableName = "BlankSlate.framework"
-            BlueprintName = "BlankSlate"
+            BlueprintIdentifier = "C6ADC8E71E76E91D00FD24FB"
+            BuildableName = "BlankSlate-tvOS.framework"
+            BlueprintName = "BlankSlate-tvOS"
             ReferencedContainer = "container:BlankSlate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D965445B1DA2A4B900FB42DB"
-            BuildableName = "BlankSlate.framework"
-            BlueprintName = "BlankSlate"
+            BlueprintIdentifier = "C6ADC8E71E76E91D00FD24FB"
+            BuildableName = "BlankSlate-tvOS.framework"
+            BlueprintName = "BlankSlate-tvOS"
             ReferencedContainer = "container:BlankSlate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D965445B1DA2A4B900FB42DB"
-            BuildableName = "BlankSlate.framework"
-            BlueprintName = "BlankSlate"
+            BlueprintIdentifier = "C6ADC8E71E76E91D00FD24FB"
+            BuildableName = "BlankSlate-tvOS.framework"
+            BlueprintName = "BlankSlate-tvOS"
             ReferencedContainer = "container:BlankSlate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

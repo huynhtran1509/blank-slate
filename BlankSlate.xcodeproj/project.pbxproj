@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6ADC8F11E76E91E00FD24FB /* BlankState.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ADC8E81E76E91D00FD24FB /* BlankState.framework */; };
+		C6ADC8FF1E76E93200FD24FB /* BlankSlate.h in Headers */ = {isa = PBXBuildFile; fileRef = D965445F1DA2A4B900FB42DB /* BlankSlate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6ADC9001E76E94700FD24FB /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96544761DA2A4DB00FB42DB /* UserDefaults.swift */; };
+		C6ADC9011E76E94700FD24FB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965447D1DA2ABFE00FB42DB /* Keychain.swift */; };
+		C6ADC9021E76E94700FD24FB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965447B1DA2A63700FB42DB /* JSON.swift */; };
+		C6ADC9031E76E9DD00FD24FB /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ADC8781E76E0B300FD24FB /* SAMKeychain.framework */; };
 		D96544661DA2A4B900FB42DB /* BlankSlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D965445C1DA2A4B900FB42DB /* BlankSlate.framework */; };
 		D965446B1DA2A4B900FB42DB /* BlankSlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965446A1DA2A4B900FB42DB /* BlankSlateTests.swift */; };
 		D965446D1DA2A4B900FB42DB /* BlankSlate.h in Headers */ = {isa = PBXBuildFile; fileRef = D965445F1DA2A4B900FB42DB /* BlankSlate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C6ADC8F21E76E91E00FD24FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D96544531DA2A4B900FB42DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6ADC8E71E76E91D00FD24FB;
+			remoteInfo = "BlankSlate-tvOS";
+		};
 		D96544671DA2A4B900FB42DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D96544531DA2A4B900FB42DB /* Project object */;
@@ -27,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6ADC8781E76E0B300FD24FB /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/tvOS/SAMKeychain.framework; sourceTree = "<group>"; };
+		C6ADC8E81E76E91D00FD24FB /* BlankState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlankState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ADC8F01E76E91E00FD24FB /* BlankSlate-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlankSlate-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D965445C1DA2A4B900FB42DB /* BlankSlate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlankSlate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D965445F1DA2A4B900FB42DB /* BlankSlate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlankSlate.h; sourceTree = "<group>"; };
 		D96544601DA2A4B900FB42DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +56,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C6ADC8E41E76E91D00FD24FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ADC9031E76E9DD00FD24FB /* SAMKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ADC8ED1E76E91E00FD24FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ADC8F11E76E91E00FD24FB /* BlankState.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D96544581DA2A4B900FB42DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +106,8 @@
 			children = (
 				D965445C1DA2A4B900FB42DB /* BlankSlate.framework */,
 				D96544651DA2A4B900FB42DB /* BlankSlateTests.xctest */,
+				C6ADC8E81E76E91D00FD24FB /* BlankState.framework */,
+				C6ADC8F01E76E91E00FD24FB /* BlankSlate-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +136,7 @@
 		D965447F1DA2AC7200FB42DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6ADC8781E76E0B300FD24FB /* SAMKeychain.framework */,
 				D96544801DA2AC7200FB42DB /* SAMKeychain.framework */,
 			);
 			name = Frameworks;
@@ -110,6 +145,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C6ADC8E51E76E91D00FD24FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ADC8FF1E76E93200FD24FB /* BlankSlate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D96544591DA2A4B900FB42DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +164,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C6ADC8E71E76E91D00FD24FB /* BlankSlate-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6ADC8F91E76E91E00FD24FB /* Build configuration list for PBXNativeTarget "BlankSlate-tvOS" */;
+			buildPhases = (
+				C6ADC8E31E76E91D00FD24FB /* Sources */,
+				C6ADC8E41E76E91D00FD24FB /* Frameworks */,
+				C6ADC8E51E76E91D00FD24FB /* Headers */,
+				C6ADC8E61E76E91D00FD24FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlankSlate-tvOS";
+			productName = "BlankSlate-tvOS";
+			productReference = C6ADC8E81E76E91D00FD24FB /* BlankState.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6ADC8EF1E76E91E00FD24FB /* BlankSlate-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6ADC8FC1E76E91E00FD24FB /* Build configuration list for PBXNativeTarget "BlankSlate-tvOSTests" */;
+			buildPhases = (
+				C6ADC8EC1E76E91E00FD24FB /* Sources */,
+				C6ADC8ED1E76E91E00FD24FB /* Frameworks */,
+				C6ADC8EE1E76E91E00FD24FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6ADC8F31E76E91E00FD24FB /* PBXTargetDependency */,
+			);
+			name = "BlankSlate-tvOSTests";
+			productName = "BlankSlate-tvOSTests";
+			productReference = C6ADC8F01E76E91E00FD24FB /* BlankSlate-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D965445B1DA2A4B900FB42DB /* BlankSlate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D96544701DA2A4B900FB42DB /* Build configuration list for PBXNativeTarget "BlankSlate" */;
@@ -163,10 +242,18 @@
 		D96544531DA2A4B900FB42DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = WillowTree;
 				TargetAttributes = {
+					C6ADC8E71E76E91D00FD24FB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C6ADC8EF1E76E91E00FD24FB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					D965445B1DA2A4B900FB42DB = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7UMFPW78PV;
@@ -194,11 +281,27 @@
 			targets = (
 				D965445B1DA2A4B900FB42DB /* BlankSlate */,
 				D96544641DA2A4B900FB42DB /* BlankSlateTests */,
+				C6ADC8E71E76E91D00FD24FB /* BlankSlate-tvOS */,
+				C6ADC8EF1E76E91E00FD24FB /* BlankSlate-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C6ADC8E61E76E91D00FD24FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ADC8EE1E76E91E00FD24FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D965445A1DA2A4B900FB42DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +319,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C6ADC8E31E76E91D00FD24FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ADC9001E76E94700FD24FB /* UserDefaults.swift in Sources */,
+				C6ADC9011E76E94700FD24FB /* Keychain.swift in Sources */,
+				C6ADC9021E76E94700FD24FB /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ADC8EC1E76E91E00FD24FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D96544571DA2A4B900FB42DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +357,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C6ADC8F31E76E91E00FD24FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6ADC8E71E76E91D00FD24FB /* BlankSlate-tvOS */;
+			targetProxy = C6ADC8F21E76E91E00FD24FB /* PBXContainerItemProxy */;
+		};
 		D96544681DA2A4B900FB42DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D965445B1DA2A4B900FB42DB /* BlankSlate */;
@@ -245,6 +370,84 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C6ADC8FA1E76E91E00FD24FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = BlankSlate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.BlankSlate-tvOS";
+				PRODUCT_NAME = BlankState;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		C6ADC8FB1E76E91E00FD24FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = BlankSlate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.BlankSlate-tvOS";
+				PRODUCT_NAME = BlankState;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		C6ADC8FD1E76E91E00FD24FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "BlankSlate-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.BlankSlate-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		C6ADC8FE1E76E91E00FD24FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "BlankSlate-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.BlankSlate-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
 		D965446E1DA2A4B900FB42DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -263,6 +466,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -316,6 +520,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -424,6 +629,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C6ADC8F91E76E91E00FD24FB /* Build configuration list for PBXNativeTarget "BlankSlate-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ADC8FA1E76E91E00FD24FB /* Debug */,
+				C6ADC8FB1E76E91E00FD24FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6ADC8FC1E76E91E00FD24FB /* Build configuration list for PBXNativeTarget "BlankSlate-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ADC8FD1E76E91E00FD24FB /* Debug */,
+				C6ADC8FE1E76E91E00FD24FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D96544561DA2A4B900FB42DB /* Build configuration list for PBXProject "BlankSlate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
